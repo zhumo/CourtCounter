@@ -62,4 +62,11 @@ public class MainActivity extends AppCompatActivity {
         return (TextView) findViewById(R.id.team_b_score);
     }
 
+    public void resetScores(View view) {
+        teamAPoints = 0;
+        teamBPoints = 0;
+        redrawTeamA();
+        redrawTeamB();
+    }
+
 }
